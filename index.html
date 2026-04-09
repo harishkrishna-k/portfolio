@@ -4,213 +4,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harish Krishna K | Software Developer</title>
+    <title>Harish Krishna K | ERP Consultant & Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">HK</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">HK<span class="logo-dot">.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-text="About">About</a></li>
+            <li><a href="#experience" data-text="Experience">Experience</a></li>
+            <li><a href="#skills" data-text="Skills">Skills</a></li>
+            <li><a href="#projects" data-text="Projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
+        <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Harish Krishna K</h1>
-            <h2 class="hero-subtitle">Mechanical Engineer turned <span class="highlight">Software Developer</span></h2>
-            <p class="hero-description">Building robust applications and automating workflows with a passion for clean
-                code and innovation.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View Work</a>
-                <a href="mailto:harishkrishnamech@gmail.com" class="btn btn-secondary">Contact Me</a>
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Available for opportunities
             </div>
+            <h1 class="hero-title reveal">
+                <span class="hero-line">I build systems</span>
+                <span class="hero-line">that <em>scale</em>.</span>
+            </h1>
+            <p class="hero-description reveal" id="heroDescription">
+                ERP Consultant & Software Engineer. I architect enterprise solutions on Frappe/ERPNext, build AI-powered automation pipelines, and ship mobile apps that drive real business outcomes.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I am a Mechanical Engineer who successfully transitioned into Software Development, driven by a
-                    curiosity for how things work—whether it's a machine or a block of code.
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">01</span>
+            <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p class="text-large">
+                    Software engineer and AI automation specialist with a Mechanical Engineering foundation. I bridge operational thinking with digital transformation &mdash; from deploying multi-agent AI systems to implementing enterprise ERP solutions.
                 </p>
                 <p>
-                    Currently working as an Associate Software Engineer Trainee at Techfinite Systems, I specialize in
-                    mobile application development, low-code/no-code platforms, and AI-driven automation. I thrive in
-                    environments that challenge me to learn new technologies and deliver efficient, business-driven
-                    solutions.
+                    Currently working as an Associate System Engineer at <strong>Techfinite Systems</strong>, I build business applications on Flutter and Frappe, deploy multi-agent AI systems (CrewAI, RAG, MCP), and automate enterprise workflows via n8n. I'm the sole developer of an LLM-powered resume screening system that processed ~1,000 applications in under one hour.
                 </p>
+                <p>
+                    <strong>Azure AI Engineer Associate</strong> certified, with a background in Lean Manufacturing and Six Sigma that bridges operational thinking with digital transformation.
+                </p>
+            </div>
+            <div class="about-details reveal">
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Hosur, Tamil Nadu</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">B.E. Mechanical Engineering</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">University</span>
+                    <span class="detail-value">Anna University, Trichy (2019&ndash;2023)</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Focus</span>
+                    <span class="detail-value">ERP Consulting, AI Automation & Full-Stack</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Certification</span>
+                    <span class="detail-value">Microsoft Azure AI Engineer Associate</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-date">03/2025 - Present</div>
-                <div class="timeline-content">
-                    <h3>Associate Software Engineer Trainee</h3>
-                    <h4>Techfinite Systems</h4>
-                    <ul>
-                        <li>Contributed to mobile application development using Flutter, implementing features based on
-                            functional requirements.</li>
-                        <li>Handled application release activities, including preparing builds and publishing mobile
-                            applications on the Google Play Store.</li>
-                        <li>Designed, configured, and deployed application workflows using no-code/low-code platforms
-                            based on business requirements.</li>
-                        <li>Delivered application modules within defined timelines while adhering to quality standards.
-                        </li>
-                        <li>Collaborated with team members for testing, debugging, and iterative improvements through
-                            peer feedback.</li>
-                    </ul>
+    <section id="experience" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="experience-list">
+            <article class="exp-card reveal">
+                <div class="exp-meta">
+                    <span class="exp-date">Mar 2025 — Present</span>
+                    <span class="exp-badge current">Current</span>
                 </div>
-            </div>
+                <h3 class="exp-role">Associate System Engineer Trainee</h3>
+                <h4 class="exp-company">Techfinite Systems &middot; Coimbatore, TN</h4>
+                <ul class="exp-details">
+                    <li>Developed an LLM-powered resume screening workflow on n8n that autonomously evaluated ~1,000 candidate applications against job descriptions, compressing a multi-day manual process to under one hour.</li>
+                    <li>Built and shipped Flutter mobile features for a Hospital Management System (HMS) leveraging the Frappe Framework, managing the full lifecycle from requirements through Google Play Store deployment.</li>
+                    <li>Designed and prototyped AI-powered automation pipelines integrating MCP, CrewAI multi-agent systems, RAG, and Ollama to reduce manual intervention in business-critical workflows.</li>
+                    <li>Architected low-code/no-code business workflows via rapid prototyping to resolve operational inefficiencies across client processes.</li>
+                    <li>Collaborated in agile sprints for testing and debugging, utilising peer feedback for iterative product improvements.</li>
+                </ul>
+            </article>
 
-            <div class="timeline-item">
-                <div class="timeline-date">11/2023 - 08/2024</div>
-                <div class="timeline-content">
-                    <h3>Management Trainee</h3>
-                    <h4>Shriram Finance Limited</h4>
-                    <ul>
-                        <li>Coordinated with team members allocate tasks and ensure smooth workflow, monitored team
-                            performance.</li>
-                        <li>Tracked and followed up on potential leads to optimize conversion rates and analyzed lead
-                            data.</li>
-                        <li>Evaluated financial statements to assess creditworthiness and prepared detailed credit
-                            reports.</li>
-                        <li>Assisted in end-to-end loan application processing, document verification, and risk
-                            assessment.</li>
-                        <li>Maintained accurate records and documentation for branch operations.</li>
-                        <li>Resolved helpdesk tickets raised by users within the assigned region, ensuring timely
-                            support.</li>
-                    </ul>
+            <article class="exp-card reveal">
+                <div class="exp-meta">
+                    <span class="exp-date">Nov 2023 — Aug 2024</span>
                 </div>
-            </div>
-
+                <h3 class="exp-role">Management Trainee</h3>
+                <h4 class="exp-company">Shriram Finance Limited &middot; Hosur, TN</h4>
+                <ul class="exp-details">
+                    <li>Conducted rigorous financial analysis and credit risk assessments for diverse clients, delivering data-backed recommendations for loan approvals in a high-stakes environment.</li>
+                    <li>Analysed lead generation trends and conversion data to optimize sales funnels, directly contributing to regional business growth and commercial targets.</li>
+                    <li>Exercised leadership and project management skills to allocate resources and monitor team performance, ensuring all project deadlines were met autonomously.</li>
+                    <li>Directed comprehensive back-office operations and critical internal workflows, streamlining processes to support seamless user experiences.</li>
+                    <li>Cultivated strategic partnerships with key stakeholders, acting as a credible advisor to foster collaboration and ensure transparent transactions.</li>
+                </ul>
+            </article>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming & Frameworks</h3>
-                <div class="skill-tags">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Flutter</span>
-                    <span>Frappe</span>
+    <section id="skills" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">AI & Automation</h3>
+                <div class="skill-pills">
+                    <span class="pill">LLM Integration</span>
+                    <span class="pill">CrewAI</span>
+                    <span class="pill">n8n</span>
+                    <span class="pill">MCP</span>
+                    <span class="pill">Ollama</span>
+                    <span class="pill">RAG</span>
+                    <span class="pill">OpenAI SDK</span>
                 </div>
             </div>
-            <div class="skill-category">
-                <h3>AI & Automation</h3>
-                <div class="skill-tags">
-                    <span>OpenAI SDK</span>
-                    <span>CrewAI</span>
-                    <span>n8n</span>
-                    <span>MCP</span>
-                    <span>Ollama</span>
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">Software Engineering</h3>
+                <div class="skill-pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">Flutter</span>
+                    <span class="pill">Spring Boot</span>
+                    <span class="pill">RabbitMQ</span>
+                    <span class="pill">Prometheus</span>
+                    <span class="pill">Grafana</span>
+                    <span class="pill">Git</span>
                 </div>
             </div>
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-tags">
-                    <span>English</span>
-                    <span>Tamil</span>
-                    <span>Telugu</span>
-                    <span>Kannada</span>
-                    <span>Hindi</span>
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">ERP & Frameworks</h3>
+                <div class="skill-pills">
+                    <span class="pill">Frappe Framework</span>
+                    <span class="pill">ERPNext</span>
+                    <span class="pill">ERP Systems</span>
+                    <span class="pill">Business Process Automation</span>
+                    <span class="pill">Digital Transformation</span>
+                    <span class="pill">Google Play Console</span>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">Operations & Methodology</h3>
+                <div class="skill-pills">
+                    <span class="pill">Lean Manufacturing</span>
+                    <span class="pill">Six Sigma</span>
+                    <span class="pill">Kaizen</span>
+                    <span class="pill">Agile</span>
+                    <span class="pill">Root Cause Analysis</span>
+                    <span class="pill">5S</span>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">Analytical & Business</h3>
+                <div class="skill-pills">
+                    <span class="pill">Credit Risk Assessment</span>
+                    <span class="pill">Financial Analysis</span>
+                    <span class="pill">KPI Tracking</span>
+                    <span class="pill">Data-Driven Decisions</span>
+                    <span class="pill">Lead Conversion Strategy</span>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <h3 class="skill-group-title">Languages</h3>
+                <div class="skill-pills">
+                    <span class="pill">Tamil <span class="pill-sub">LSRW</span></span>
+                    <span class="pill">English <span class="pill-sub">LSRW</span></span>
+                    <span class="pill">Telugu <span class="pill-sub">LS</span></span>
+                    <span class="pill">Kannada <span class="pill-sub">LS</span></span>
+                    <span class="pill">Hindi <span class="pill-sub">RW</span></span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Li-Ion Battery Monitoring System</h3>
-                <p class="project-date">02/2023 - 05/2023</p>
-                <p>Development of Lithium Ion Battery Performance Monitoring and Management System.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Thermal Boundary Layer Experiment</h3>
-                <p class="project-date">02/2022 - 06/2022</p>
-                <p>Design and Fabrication of Experimental Facility for Estimation of Thermal Boundary Layer Over Flat
-                    Surface.</p>
-            </div>
-
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-list">
+            <article class="project-item reveal">
+                <div class="project-index">01</div>
+                <div class="project-body">
+                    <h3 class="project-name">AI Resume Screening System</h3>
+                    <p class="project-desc">End-to-end LLM-powered pipeline that parsed and scored ~1,000 resumes against job descriptions via Google Drive integration, replacing days of manual effort with a sub-one-hour automated workflow.</p>
+                    <span class="project-period">Mar 2026</span>
+                </div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </article>
+            <article class="project-item reveal">
+                <div class="project-index">02</div>
+                <div class="project-body">
+                    <h3 class="project-name">Li-Ion Battery Monitoring System</h3>
+                    <p class="project-desc">Hardware-software management system for real-time battery health monitoring, integrating sensor data pipelines with a diagnostic dashboard. Implemented safety protocols for over-voltage and thermal runaway protection.</p>
+                    <span class="project-period">Feb 2023 — May 2023</span>
+                </div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </article>
+            <article class="project-item reveal">
+                <div class="project-index">03</div>
+                <div class="project-body">
+                    <h3 class="project-name">Thermal Boundary Layer Experimental Facility</h3>
+                    <p class="project-desc">Designed and fabricated a complete experimental setup from concept to prototype for estimating thermal boundary layers over flat surfaces, with sensor integration for high-precision data collection.</p>
+                    <span class="project-period">Feb 2022 — Jun 2022</span>
+                </div>
+                <div class="project-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </article>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <h2 class="section-title">Education & Certifications</h2>
-        <div class="education-grid">
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">05</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="cert-grid">
+            <a href="https://learn.microsoft.com/api/credentials/share/en-gb/HarishKrishnaK/6C2C67A36AEC710E" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Microsoft</span>
+                <h3 class="cert-name">Azure AI Engineer Associate</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://www.guvi.in/certificate?id=Wg627Z109DB6R119Ff" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">GUVI</span>
+                <h3 class="cert-name">Python Programming</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://www.guvi.in/certificate?id=j61o969yV9t59012nE" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">GUVI</span>
+                <h3 class="cert-name">AI for India</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://coursera.org/verify/8WAJ3KT8ZSU7" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Coursera</span>
+                <h3 class="cert-name">Intro to Battery-Management Systems</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://coursera.org/verify/A48Z35QTTCKM" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Coursera</span>
+                <h3 class="cert-name">Motors and Motor Control Circuits</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://coursera.org/verify/R6H22VZPMRC8" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Coursera</span>
+                <h3 class="cert-name">Equivalent Circuit Cell Model Simulation</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://coursera.org/verify/48WXQXH9BGCL" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Coursera</span>
+                <h3 class="cert-name">Converter Circuits</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://coursera.org/verify/2C7HCMMA9XRK" target="_blank" class="cert-card reveal">
+                <span class="cert-provider">Coursera</span>
+                <h3 class="cert-name">People, Technology & Future of Mobility</h3>
+                <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+    </section>
 
-            <div class="education-card">
-                <h3>B.E. Mechanical Engineering</h3>
-                <p>Anna University, Trichy</p>
-                <p class="date">08/2019 - 06/2023</p>
+    <!-- Interests Section -->
+    <section id="interests" class="section">
+        <div class="section-header reveal">
+            <span class="section-number">06</span>
+            <h2 class="section-title">Interests</h2>
+        </div>
+        <div class="interests-grid">
+            <div class="interest-item reveal">
+                <h3 class="interest-name">Reverse Engineering</h3>
+                <p class="interest-desc">Disassembling electronic and mechanical devices to understand design intent and failure points.</p>
             </div>
-
-            <div class="cerification-list">
-                <h3>Certifications</h3>
-                <ul>
-                    <li><a href="https://www.guvi.in/certificate?id=Wg627Z109DB6R119Ff" target="_blank">Python
-                            (GUVI)</a></li>
-                    <li><a href="https://www.guvi.in/certificate?id=j61o969yV9t59012nE&download=true" target="_blank">AI
-                            for India (GUVI)</a></li>
-                    <li><a href="https://coursera.org/verify/8WAJ3KT8ZSU7" target="_blank">Intro to Battery-Management
-                            Systems (Coursera)</a></li>
-                    <li><a href="https://coursera.org/verify/A48Z35QTTCKM" target="_blank">Motors and Motor Control
-                            Circuits (Coursera)</a></li>
-                    <li><a href="https://di5jfel2ggs8k.cloudfront.net/userCertificates/66069987L.pdf"
-                            target="_blank">SPAN Academic Manager's</a></li>
-                </ul>
+            <div class="interest-item reveal">
+                <h3 class="interest-name">3D Printing</h3>
+                <p class="interest-desc">Prototyping custom parts and exploring additive manufacturing techniques.</p>
+            </div>
+            <div class="interest-item reveal">
+                <h3 class="interest-name">Linux/Android Customization</h3>
+                <p class="interest-desc">Modifying system kernels and testing software-hardware integration.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact / Footer -->
     <footer id="contact" class="footer">
-        <p>Connect with me:</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/harishkrishnak" target="_blank">LinkedIn</a>
-            <a href="mailto:harishkrishnamech@gmail.com">Email</a>
+        <div class="footer-content">
+            <div class="footer-cta reveal">
+                <h2 class="footer-title">Let's work<br>together.</h2>
+                <p class="footer-text">Have a project in mind or need an ERP consultant? I'd love to hear from you.</p>
+                <a href="mailto:harishkrishna.k@outlook.com" class="btn btn-primary btn-large">
+                    <span>Say Hello</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/harishkrishnak" target="_blank">LinkedIn</a>
+                    <a href="mailto:harishkrishna.k@outlook.com">Email</a>
+                    <a href="https://harishkrishna-k.github.io/portfolio/" target="_blank">Portfolio</a>
+                </div>
+                <p class="copyright">&copy; 2026 Harish Krishna K</p>
+            </div>
         </div>
-        <p class="copyright">&copy; 2026 Harish Krishna K. All rights reserved.</p>
     </footer>
 
     <script type="module" src="script.js"></script>
