@@ -1,4 +1,4 @@
-.experience {
+.education {
   border-top: 1px solid var(--border);
 }
 
@@ -12,26 +12,31 @@
   margin-bottom: 3rem;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
-.item {
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.eduBlock {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.degree {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.role {
-  font-size: 1.5rem;
+.institution {
+  color: var(--accent);
   font-weight: 500;
 }
 
@@ -41,29 +46,32 @@
   color: var(--text-muted);
 }
 
-.company {
-  font-weight: 500;
-  color: var(--accent);
-}
-
-.points {
-  margin-top: 1rem;
+.certBlock {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  max-width: 700px;
+  gap: 1rem;
 }
 
-.point {
-  color: var(--text-secondary);
+.certHeading {
   font-size: 1rem;
-  line-height: 1.6;
+  font-weight: 500;
+}
+
+.certList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cert {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
   font-weight: 300;
   padding-left: 1.25rem;
   position: relative;
 }
 
-.point::before {
+.cert::before {
   content: "—";
   position: absolute;
   left: 0;

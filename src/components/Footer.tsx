@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.bottom}>
           <p>© {new Date().getFullYear()} {content.name}</p>
-          <p>Built with React & TypeScript</p>
         </div>
       </div>
     </footer>

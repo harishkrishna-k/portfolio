@@ -14,7 +14,11 @@ const Experience: React.FC = () => {
               <span className={styles.period}>{item.period}</span>
             </div>
             <p className={styles.company}>{item.company}</p>
-            <p className={styles.description}>{item.description}</p>
+            <ul className={styles.points}>
+              {item.points.map((point, i) => (
+                <li key={i} className={styles.point}>{point}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
