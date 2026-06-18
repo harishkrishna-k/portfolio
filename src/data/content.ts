@@ -86,7 +86,7 @@ export const content = {
         "Engineered an automated thermal management system utilizing an Arduino Uno R3, a 12V relay, a heat sink with heat pipes, and a BLDC fan to dynamically regulate battery temperature and prevent thermal runaway.",
       ],
       links: [
-        { label: "Live Dashboard", url: "#" },
+        { label: "Live Dashboard", url: "https://harishkrishna-k.github.io/Li-ion_PMS/demo-dashboard/" },
       ],
     },
     {

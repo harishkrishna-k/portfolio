@@ -2,30 +2,26 @@
   border-top: 1px solid var(--border);
 }
 
-.label {
+.label,
+.certLabel {
   display: block;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 3rem;
   font-weight: 500;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+.label {
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.certLabel {
+  margin: 3rem 0 1.5rem;
 }
 
-.eduBlock {
+.eduCard {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -54,62 +50,59 @@
   margin-top: 0.25rem;
 }
 
-.certBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.certHeading {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
 .certList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  .certList {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .cert {
   font-size: 0.85rem;
   color: var(--text-secondary);
   font-weight: 350;
-  padding-left: 1.25rem;
+  padding: 0.6rem 1rem 0.6rem 2rem;
+  background: var(--surface);
+  border-radius: 10px;
+  border: 1px solid var(--border);
   position: relative;
   line-height: 1.5;
+  transition: border-color 0.2s;
+}
+
+.cert:hover {
+  border-color: var(--accent);
 }
 
 .cert::before {
-  content: "—";
+  content: "›";
   position: absolute;
-  left: 0;
+  left: 0.75rem;
+  top: 0.6rem;
   color: var(--accent);
-  opacity: 0.6;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .certLink {
-  color: var(--accent);
-  font-weight: 450;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-  text-decoration-color: color-mix(in srgb, var(--accent) 30%, transparent);
-  transition: text-decoration-color 0.2s;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .certLink:hover {
-  text-decoration-color: var(--accent);
+  color: var(--accent);
   opacity: 1;
 }
 
 .langSection {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: var(--surface);
-  border-radius: 16px;
-  border: 1px solid var(--border);
+  margin-top: 3rem;
 }
 
 .langHeading {
@@ -130,7 +123,7 @@
   color: var(--text-secondary);
   font-weight: 350;
   padding: 0.3rem 0.85rem;
-  background: var(--bg);
+  background: var(--surface);
   border-radius: 20px;
   border: 1px solid var(--border);
 }

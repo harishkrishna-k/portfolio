@@ -31,7 +31,7 @@
 }
 
 .item:hover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
 }
 
