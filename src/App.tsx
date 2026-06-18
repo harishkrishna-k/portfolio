@@ -32,15 +32,9 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <div className="reveal">
-          <About />
-        </div>
-        <div className="reveal">
-          <Experience />
-        </div>
-        <div className="reveal">
-          <Projects />
-        </div>
+        <About />
+        <Experience />
+        <Projects />
       </main>
       <Footer />
     </>
