@@ -131,13 +131,13 @@ function initSkillsInteraction() {
             const skill = SKILLS_DATA[idx];
 
             activePanel.innerHTML = `
-                <div class="skills-active-inner">
-                    <p class="focus-text" style="color: var(--text);">${skill.description}</p>
-                    <div style="margin-top: 1.5rem;">
-                        ${skill.tools.map(t => `<span class="toolkit-pill">${t}</span>`).join('')}
+                <div class="skills-active-inner" style="background: #000; color: #fff; padding: 3rem; margin-top: 2rem; border: 2px solid #000;">
+                    <p class="focus-text" style="color: #fff; font-size: 1.5rem; line-height: 1.2; margin-bottom: 2rem;">${skill.description}</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;">
+                        ${skill.tools.map(t => `<span class="toolkit-pill" style="border: 1px solid rgba(255,255,255,0.3); color: #fff; padding: 0.5rem 1rem; font-family: var(--font-mono); font-size: 0.75rem;">${t}</span>`).join('')}
                     </div>
-                    <div style="margin-top: 1rem; opacity: 0.5;">
-                        ${skill.tags.map(t => `<span style="font-family: var(--font-mono); font-size: 0.625rem; margin-right: 0.5rem;">#${t}</span>`).join('')}
+                    <div style="opacity: 0.5; font-family: var(--font-mono); font-size: 0.75rem;">
+                        ${skill.tags.map(t => `<span style="margin-right: 1rem;">#${t}</span>`).join('')}
                     </div>
                 </div>
             `;
