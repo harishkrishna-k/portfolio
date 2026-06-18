@@ -1,0 +1,38 @@
+.about {
+  border-top: 1px solid var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.label {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.6;
+}

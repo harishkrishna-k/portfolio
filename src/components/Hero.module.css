@@ -1,0 +1,23 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.name {
+  font-size: clamp(3rem, 10vw, 6rem);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.04em;
+}
+
+.tagline {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 800px;
+  line-height: 1.2;
+}
