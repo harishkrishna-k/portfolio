@@ -5,40 +5,28 @@ import { prepareWithSegments, walkLineRanges } from 'https://esm.sh/@chenglou/pr
    ============================================ */
 const SKILLS_DATA = [
     {
-        title: "AI & Automation",
-        tools: ["LLM Integration", "CrewAI", "n8n", "MCP", "Ollama", "RAG", "OpenAI SDK"],
-        description: "Building intelligent automation pipelines that replace manual processes. From multi-agent systems to workflow orchestration, I design AI-powered solutions that deliver measurable business impact.",
-        tags: ["Multi-Agent Systems", "Workflow Automation", "Prompt Engineering", "Vector Databases", "LangChain"]
+        title: "Mechanical Design & CAD",
+        tools: ["CAD Drafting", "Technical Drawing", "Rapid Prototyping (3D Printing)", "Reverse Engineering", "Design for Manufacturing (DFM)"],
+        description: "Specializing in the development of robust physical components and assemblies. I use CAD and rapid prototyping to translate conceptual designs into functional hardware, ensuring manufacturability and performance.",
+        tags: ["SolidWorks", "AutoCAD", "Prototyping", "DFM", "Technical Documentation"]
     },
     {
-        title: "ERP & Frappe",
-        tools: ["Frappe Framework", "ERPNext", "ERP Systems", "Business Process Automation"],
-        description: "Consulting on and implementing enterprise resource planning solutions. I architect Frappe-based systems that streamline operations, from hospital management to business workflow automation.",
-        tags: ["Module Design", "Custom Doctypes", "Report Builder", "Workflow Engine", "API Integration"]
+        title: "Systems Engineering & Validation",
+        tools: ["System Identification", "Instrumentation", "Experimental Validation", "Design of Experiments (DOE)", "Thermal Analysis", "Root Cause Analysis"],
+        description: "Applying first-principles thinking to validate system performance. I design and execute experiments to identify system behavior, analyze thermal characteristics, and resolve root causes of failure.",
+        tags: ["First-Principles", "Data Acquisition", "Signal Processing", "Thermal Management", "DOE"]
     },
     {
-        title: "Software Engineering",
-        tools: ["Python", "Java", "SQL", "Spring Boot", "RabbitMQ", "Prometheus", "Grafana"],
-        description: "Full-stack development with a focus on backend architecture, message queues, and observability. I build systems designed for reliability and scale.",
-        tags: ["Microservices", "REST APIs", "Event-Driven", "CI/CD", "Git"]
+        title: "Automation & Integration",
+        tools: ["Sensor Data Acquisition", "Microcontroller Integration (Arduino/ESP)", "Python", "GenAI APIs", "Workflow Automation (n8n)"],
+        description: "Bridging the gap between physical hardware and digital intelligence. I build automated diagnostic pipelines and sensor integration platforms that enhance system observability and control.",
+        tags: ["Embedded Systems", "IoT", "Scripting", "API Integration", "Real-time Monitoring"]
     },
     {
-        title: "Operations & Lean",
-        tools: ["Lean Manufacturing", "Six Sigma", "Kaizen", "Agile", "5S"],
-        description: "My mechanical engineering background gives me a unique lens on process optimization. I apply Lean and Six Sigma thinking to software delivery and digital transformation.",
-        tags: ["Root Cause Analysis", "Value Stream Mapping", "Continuous Improvement", "Pareto Analysis"]
-    },
-    {
-        title: "Business Analytics",
-        tools: ["Credit Risk Assessment", "Financial Analysis", "KPI Tracking", "Data Modeling"],
-        description: "Experience in financial services taught me to make data-driven decisions under pressure. I analyze business metrics, conversion funnels, and operational KPIs to drive growth.",
-        tags: ["Lead Conversion", "Sales Funnel", "Financial Statements", "Risk Assessment"]
-    },
-    {
-        title: "Mobile Development",
-        tools: ["Flutter", "Dart", "Google Play Console", "Firebase"],
-        description: "Building cross-platform mobile applications from requirements through deployment. Full lifecycle management including Play Store publishing and release automation.",
-        tags: ["Cross-Platform", "Material Design", "State Management", "App Publishing"]
+        title: "Operations & Deployment",
+        tools: ["Process Bottleneck Resolution", "Lean / Six Sigma", "Cross-Functional Coordination"],
+        description: "Optimizing the lifecycle of engineering projects from design to deployment. I apply lean principles to identify bottlenecks and streamline operational workflows for complex systems.",
+        tags: ["Lean Engineering", "Process Improvement", "Strategic Planning", "Resource Allocation"]
     }
 ];
 
