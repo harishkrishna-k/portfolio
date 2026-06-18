@@ -8,7 +8,7 @@ export const content = {
     period: "2019 — 2023",
   },
   certifications: [
-    { name: "Microsoft Certified: Azure AI Engineer Associate", url: "https://learn.microsoft.com/api/credentials/share/en-gb/Harish%20KrishnaK/6C2C67A36AEC710E" },
+    { name: "Microsoft Certified: Azure AI Engineer Associate", url: "https://learn.microsoft.com/api/credentials/share/en-in/HarishKrishnaK/6C2C67A36AEC710E?sharingId=25E0485BAEEDF0C" },
     { name: "Introduction to Battery-Management Systems — Coursera", url: "https://coursera.org/verify/8WAJ3KT8ZSU7" },
     { name: "Motors and Motor Control Circuits — Coursera", url: "https://coursera.org/verify/A48Z35QTTCKM" },
     { name: "Equivalent Circuit Cell Model Simulation — Coursera", url: "https://coursera.org/verify/R6H22VZPMRC8" },
