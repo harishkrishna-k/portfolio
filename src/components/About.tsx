@@ -6,13 +6,11 @@ const About: React.FC = () => {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.grid}>
-        <div className={styles.header}>
-          <span className={styles.label}>About</span>
-          <h2 className={styles.title}>{content.about.title}</h2>
+        <div>
+          <span className={styles.label}>Professional Summary</span>
+          <h2 className={styles.title}>Mechanical engineer building testable hardware solutions from first principles.</h2>
         </div>
-        <div className={styles.content}>
-          <p className={styles.description}>{content.about.description}</p>
-        </div>
+        <p className={styles.description}>{content.summary}</p>
       </div>
     </section>
   );

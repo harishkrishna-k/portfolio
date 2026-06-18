@@ -1,23 +1,42 @@
 .hero {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 2rem;
   max-width: var(--max-w);
   margin: 0 auto;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 6%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .name {
-  font-size: clamp(3rem, 10vw, 6rem);
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  margin-bottom: 1.25rem;
   letter-spacing: -0.04em;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.nameAccent {
+  color: var(--accent);
 }
 
 .tagline {
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
   color: var(--text-secondary);
-  font-weight: 300;
-  max-width: 800px;
-  line-height: 1.2;
+  font-weight: 350;
+  max-width: 650px;
+  line-height: 1.35;
 }

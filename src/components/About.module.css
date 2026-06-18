@@ -5,7 +5,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 @media (min-width: 1024px) {
@@ -19,20 +19,23 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  line-height: 1.1;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
   font-weight: 500;
 }
 
+.title {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
 .description {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
-  font-weight: 300;
-  line-height: 1.6;
+  font-weight: 350;
+  line-height: 1.7;
 }

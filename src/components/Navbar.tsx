@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <a href="#" className={styles.logo}>{content.name}</a>
         <div className={styles.links}>
           <a href="#about">About</a>
-          <a href="#projects">Work</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </div>

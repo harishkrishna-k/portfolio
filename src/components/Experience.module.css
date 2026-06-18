@@ -7,9 +7,10 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  color: var(--accent);
   margin-bottom: 3rem;
+  font-weight: 500;
 }
 
 .list {
@@ -22,43 +23,60 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.3s var(--ease-smooth), transform 0.3s var(--ease-smooth);
+}
+
+.item:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .role {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .period {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
+  background: var(--bg);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
 }
 
 .company {
   font-weight: 500;
   color: var(--accent);
+  font-size: 0.95rem;
 }
 
 .points {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  max-width: 700px;
+  gap: 0.6rem;
 }
 
 .point {
   color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  font-weight: 350;
   padding-left: 1.25rem;
   position: relative;
 }
@@ -68,4 +86,5 @@
   position: absolute;
   left: 0;
   color: var(--accent);
+  opacity: 0.6;
 }

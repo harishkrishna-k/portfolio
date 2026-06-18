@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
               <h3 className={styles.role}>{item.role}</h3>
               <span className={styles.period}>{item.period}</span>
             </div>
-            <p className={styles.company}>{item.company}</p>
+            <p className={styles.company}>{item.company} · {item.location}</p>
             <ul className={styles.points}>
               {item.points.map((point, i) => (
                 <li key={i} className={styles.point}>{point}</li>

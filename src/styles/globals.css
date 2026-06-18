@@ -1,22 +1,25 @@
-/* src/styles/globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;350;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg: #ffffff;
+  --bg: #fafafa;
+  --surface: #ffffff;
   --text: #111111;
-  --text-secondary: #666666;
-  --text-muted: #999999;
-  --accent: #0071e3; /* Soft Apple-style blue */
-  --border: #e5e5e5;
+  --text-secondary: #5a5a5a;
+  --text-muted: #8a8a8a;
+  --accent: #2563eb;
+  --border: #e8e8e8;
   --max-w: 1100px;
   --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
-  --gap: 2rem;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,19 +47,19 @@ ul {
 h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 section {
-  padding: 8rem 2rem;
+  padding: 6rem 2rem;
   max-width: var(--max-w);
   margin: 0 auto;
 }
 
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s var(--ease-smooth);
+  transform: translateY(24px);
+  transition: all 0.7s var(--ease-smooth);
 }
 
 .reveal.active {

@@ -16,9 +16,23 @@ const Education: React.FC = () => {
           <h3 className={styles.certHeading}>Certifications</h3>
           <ul className={styles.certList}>
             {content.certifications.map((cert, i) => (
-              <li key={i} className={styles.cert}>{cert}</li>
+              <li key={i} className={styles.cert}>
+                <a href={cert.url} target="_blank" rel="noopener noreferrer" className={styles.certLink}>
+                  {cert.name}
+                </a>
+              </li>
             ))}
           </ul>
+        </div>
+      </div>
+      <div className={styles.langSection}>
+        <h3 className={styles.langHeading}>Languages</h3>
+        <div className={styles.langList}>
+          {content.languages.map((lang, i) => (
+            <span key={i} className={styles.lang}>
+              <strong>{lang.lang}</strong> · {lang.proficiency}
+            </span>
+          ))}
         </div>
       </div>
     </section>
