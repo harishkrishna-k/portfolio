@@ -18,8 +18,8 @@ const SKILLS_DATA = [
     },
     {
         title: "Automation & Integration",
-        tools: ["Sensor Data Acquisition", "Microcontroller Integration (Arduino/ESP)", "Python", "GenAI APIs", "Workflow Automation (n8n)"],
-        description: "Bridging the gap between physical hardware and digital intelligence. I build automated diagnostic pipelines and sensor integration platforms that enhance system observability and control.",
+        tools: ["Sensor Data Acquisition", "Microcontroller Integration (Arduino/ESP)", "Python", "GenAI APIs", "Workflow Automation (n8n)", "Streamlit"],
+        description: "Bridging the gap between physical hardware and digital intelligence. I build automated diagnostic pipelines and document conversion tools (like MD-Convert) that enhance system observability and LLM workflows.",
         tags: ["Embedded Systems", "IoT", "Scripting", "API Integration", "Real-time Monitoring"]
     },
     {

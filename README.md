@@ -26,6 +26,10 @@ Mechanical Engineering graduate with hands-on experience designing, instrumentin
 - Integrated sensors, communication modules, and automated control logic to support experimentation, instrumentation, and hardware validation workflows.
 - Performed sensor calibration, data validation, and troubleshooting to improve measurement reliability and system repeatability.
 
+### MD-Convert - Document to Markdown for LLMs (Live App)
+- Developed a Streamlit-based utility to convert PDF and DOCX files into clean Markdown for LLM context injection and RAG pipelines.
+- [Try Live App](https://md-convert.streamlit.app/)
+
 ## Work Experience
 ### Techfinite Systems - Associate System Engineer Trainee (03/2025 – 04/2026)
 - Designed automation and integration workflows using Python and low-code platforms (n8n), translating complex operational requirements into repeatable and scalable system architectures.
